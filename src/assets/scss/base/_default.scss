@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'gilroy-bold';
+
+}
+
+p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primary-text);
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--main-text);
+}
+
+h3 {
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--secondry-text);
+}

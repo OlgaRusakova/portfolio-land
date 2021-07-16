@@ -1,0 +1,67 @@
+.header {
+  padding-top: 65px;
+  @include breakpoint(sm) {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  }
+
+  &__menu-wrap {
+    position: fixed;
+    display: none;
+    @include breakpoint(sm) {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #828282;
+    }
+  }
+
+  &__menu-wrap-visible {
+    display: block;
+    background-color: white;
+    width: 100%;
+    transition: 1s;
+    z-index: 3;
+    left: 0;
+  }
+
+  &__navigation {
+  }
+
+  &__menu-ul {
+    @include breakpoint(sm) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    }
+
+  }
+}
+.menu-item {
+  list-style-type: none;
+  font-size: 34px;
+  line-height: 42px;
+  padding-top: 65px;
+  &:first-child {
+    padding-top: 0;
+    color: var(--main-text);
+  }
+  @include breakpoint(sm) {
+  padding: 32px 0px;
+  font-size: 18px;
+  line-height: 22px;
+    &:first-child {
+      padding: 32px 0px
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--secondry-text);
+  }
+  &__link-bold {
+    color: var(--main-text);
+  }
+}

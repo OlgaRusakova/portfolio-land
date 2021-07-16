@@ -1,0 +1,30 @@
+.portfolio {
+    padding-top: 98px;
+    @include breakpoint(lg) {
+    padding-top: 112px;
+    }
+
+    &__h2 {
+        margin-bottom: 65px;
+        margin-top: 0;
+    }
+
+    &__wraper {
+    }
+
+    &__image {
+        margin-bottom: 45px;
+    }
+
+    &__link {
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
+        font-family: Gilroy-Medium;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration-line: underline;   
+        color: var(--main-txt);
+    }
+}

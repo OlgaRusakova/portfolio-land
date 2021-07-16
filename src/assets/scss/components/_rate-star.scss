@@ -1,0 +1,13 @@
+.rate__star {
+        content: url(../img/skills/eStar.svg);
+        margin-right: 9px;
+        &:last-child {margin-right: 0;};
+    }
+    
+    .rate[data-mark="5"] .rate__star:nth-child(-n + 5),
+    .rate[data-mark="4"] .rate__star:nth-child(-n + 4),
+    .rate[data-mark="3"] .rate__star:nth-child(-n + 3),
+    .rate[data-mark="2"] .rate__star:nth-child(-n + 2),
+    .rate[data-mark="1"] .rate__star:nth-child(-n + 1) {
+    content: url(../img/skills/fStar.svg);
+    }

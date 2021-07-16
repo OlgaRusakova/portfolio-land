@@ -1,0 +1,30 @@
+.about {
+    padding-top: 81px;
+    padding-bottom: 76px;
+
+    &__h2 {
+        
+        margin: 0;
+        padding-bottom: 9px;
+    }
+
+    &__text-wraper {
+        max-width: 316px;
+        max-height: 261px;
+        margin: 0;
+        padding-top: 9px;
+        margin: 0 auto;
+        @include breakpoint(lg) {
+        max-width: 485px;
+        max-height: 218px;
+        }
+        
+    }
+
+    &__text {
+        padding-bottom: 20px;
+        width: 100%;
+
+    }
+}
+

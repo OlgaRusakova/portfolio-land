@@ -1,0 +1,78 @@
+.promo {
+    @include breakpoint(sm) {
+    padding-top: 20px;
+    }
+    padding-bottom: 83px;
+
+    &__text-wrap {
+        @include breakpoint(sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        max-width:  124px;
+        max-height: 110px;
+        width: 100%;
+        height: 100%;
+        font-size: 47px;
+        line-height: 58px;
+        margin-top: 8px;
+        @include breakpoint(sm) {
+        margin: 0;
+        }
+    }
+
+    &__text {
+        width: 155px;
+        height: 44px;
+        margin-bottom: 37px;
+        @include breakpoint(sm) {
+        margin: 0;
+        }
+    }
+    &__leng-wrap{
+    display: none;
+    @include breakpoint(sm) {
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 65px;
+    }
+    }
+    &__leng-switch {
+        cursor: pointer;
+        @include breakpoint(sm) {
+        font-family: 'Gilroy-Bold';
+        font-size: 16px;
+        line-height: 20px;
+        transform: rotate(270deg);
+        color: var(--secondry-text);
+        padding-left: 15px;
+        margin: 0;
+        position: absolute;
+        width: 80px;
+        height: 21px;
+        bottom: 30%;
+        right: -150%;
+        }
+        & > span {
+            color: var(--main-text);
+        }
+    }
+
+    &__self-introduction {
+        background-image: url(../img/promo/promo3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        display: block;
+        height: 478px;
+        position: relative;
+    }
+}
+

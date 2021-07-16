@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 43px;
+    padding-bottom: 123px;
+
+    &__social-wraper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 46px;
+    }
+
+    &__social-link {
+        padding-right: 52px;
+        &:last-child {
+            padding: 0;
+        }
+        @include breakpoint(sm) {
+        padding-right: 60px;
+        &:last-child {
+            padding: 0;
+        }
+        }
+    }
+    &__text {
+        max-width: 315px;
+        margin: 0 auto;
+        color: var(--secondry-text);
+    }
+
+}
+
