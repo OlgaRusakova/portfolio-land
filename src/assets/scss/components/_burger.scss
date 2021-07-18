@@ -2,11 +2,8 @@
     z-index: 4;
     width: 33px;
     height: 20px;
-    position: fixed;
-    top: 9.8%;
-    right: 7%;
     display: block;
-    span {
+    &_btn {
         position: absolute;
         width: 30px;
         height: 4px;
@@ -32,9 +29,8 @@
 @include breakpoint(sm) {
 display: none;
 }
-}
 
-.burger_active {
+&_active {
     
     span {
         
@@ -51,4 +47,4 @@ display: none;
             background-color: var(--secondry-text);
     }}
 }
-
+}

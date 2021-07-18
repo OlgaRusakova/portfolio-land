@@ -4,7 +4,7 @@
 
     burger.addEventListener('click', function() {
     burger.classList.toggle('burger_active');
-    menuWrap.classList.toggle('header__menu-wrap-visible');
+    menuWrap.classList.toggle('header__menu-wrap_visible');
     });
 
 

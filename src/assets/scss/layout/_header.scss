@@ -17,7 +17,7 @@
     }
   }
 
-  &__menu-wrap-visible {
+  &__menu-wrap_visible {
     display: block;
     background-color: white;
     width: 100%;
@@ -26,10 +26,7 @@
     left: 0;
   }
 
-  &__navigation {
-  }
-
-  &__menu-ul {
+  &__menu-list {
     @include breakpoint(sm) {
     display: flex;
     width: 100%;
@@ -38,30 +35,40 @@
     }
 
   }
-}
+
 .menu-item {
   list-style-type: none;
   font-size: 34px;
   line-height: 42px;
   padding-top: 65px;
+
+  @include breakpoint(sm) {
+    padding: 32px 0px;
+    font-size: 18px;
+    line-height: 22px;
+    }
+
   &:first-child {
     padding-top: 0;
     color: var(--main-text);
-  }
-  @include breakpoint(sm) {
-  padding: 32px 0px;
-  font-size: 18px;
-  line-height: 22px;
-    &:first-child {
-      padding: 32px 0px
+    @include breakpoint(sm) {
+        padding: 32px 0px;
     }
   }
+
 
   &__link {
     text-decoration: none;
     color: var(--secondry-text);
+    &:hover {
+      color: var(--main-text);
+    }
   }
-  &__link-bold {
-    color: var(--main-text);
-  }
+}
+&__burger {
+    position: fixed;
+    top: 9.8%;
+    right: 7%;
+}
+
 }

@@ -9,4 +9,11 @@
     border-width: 0;
     padding: 13px 0px;
     cursor: pointer;
+    &:hover {
+        color: var(--main-text);
+        background-color: white;
+        transition: 0.3s;
+        border-width: 1px;
+        border-color: black;
+    }
 }
